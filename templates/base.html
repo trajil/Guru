@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content:  space-between;
+            color: rgb(105, 128, 148);
+        }
+        #questionField {
+            width: 50%;
+            margin: auto;
+            display: block;
+        }
+        #chat-display {
+            width: 50%;
+            margin: auto;
+            display: block;
+            text-align: left;
+            background-color: rgba(40, 165, 155, 0.75); /* Ändern Sie diesen Wert, um die Farbe und Transparenz anzupassen */
+            border-radius: 20px; /* Fügt abgerundete Ecken hinzu */
+            padding: 50px; /* Fügt etwas Platz um den Text hinzu */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu, um ein "Hervorhebungs"-Effekt zu erzeugen */
+            overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt den verfügbaren Raum übersteigt */
+            max-height: 800px; /* Begrenzt die maximale Höhe des Chat-Displays */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index">Home</a> |
+            <a href="/horoskop">Horoskop</a> |
+            <a href="/traumdeutung">Traumdeutung</a> |
+            <a href="/hellsehen">Hellsehen</a> |
+            <a href="/psychologie">Psychologie</a> |
+            <a href="/account">Mein Account</a> |
+            <a href="/aktuelles">Aktuelles</a> |
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </main>
+    <footer>
+      <nav>
+        <a href="/impressum">Impressum</a> |
+        <a href="/kontakt">Kontakt</a>
+      </nav>
+        <p>© 2023 Guru</p>
+    </footer>
+</body>
+</html>

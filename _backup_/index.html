@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        background-image: url("/static/Bilder/Hintergrundgrafiken/GuruBackground.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: aliceblue;
+        #questionField {
+        width: 50%;
+        margin: auto;
+        display: block;
+        }
+
+        #chat-display {
+        width: 50%;
+        margin: auto;
+        display: block;
+        text-align: left;
+        }
+    }
+</style>
+  <title>Guru</title>
+</head>
+<body>
+  <input id="questionField" type="text" placeholder="Ask a question">
+  <button id="sendButton">Send</button>
+  <p id="responseField"></p>
+  <div id="chat-display"></div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

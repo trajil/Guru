@@ -1,0 +1,12 @@
+#chat-display {
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: left;
+    background-color: rgba(216, 53, 53, 0.8); /* Ändern Sie diesen Wert, um die Farbe und Transparenz anzupassen */
+    border-radius: 50px; /* Fügt abgerundete Ecken hinzu */
+    padding: 50px; /* Fügt etwas Platz um den Text hinzu */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu, um ein "Hervorhebungs"-Effekt zu erzeugen */
+    overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt den verfügbaren Raum übersteigt */
+    max-height: 800px; /* Begrenzt die maximale Höhe des Chat-Displays */
+}

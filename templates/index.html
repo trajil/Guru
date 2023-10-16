@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+body {
+    background-image: url("/static/Bilder/Hintergrundgrafiken/GuruBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(129, 138, 146);
+}
+</style>
+<div style="display: flex; justify-content: center;">
+    <input id="questionField" type="text" placeholder="Wohin soll die Reise gehen?">
+    <button id="sendButton">Send</button>
+</div>
+<p id="responseField"></p>
+<div id="chat-display"></div>
+{% endblock %}
