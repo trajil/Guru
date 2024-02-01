@@ -18,10 +18,10 @@ The application provides a web interface where users can submit questions in dif
 To get started with this application, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/yourusername/yourrepositoryname.git
+git clone https://github.com/trajil/Guru.git
 
 2. Navigate to the cloned directory:
-cd yourrepositoryname
+cd Guru
 
 3. Install the required dependencies:
 pip install -r requirements.txt
